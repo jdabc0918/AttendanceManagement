@@ -32,7 +32,7 @@ void Person::print()
 AttendanceManager::AttendanceManager()
 {
 	/*	‰Šú‰»ˆ—	*/
-	if (Initialize() == AM_FAILURE || LoadPersonalDataFile("PersonalData.csv") == AM_FAILURE)
+	if (Initialize() == AM_FAILURE || LoadPersonalDataFile((std::string)PERSONAL_DATA_CSV) == AM_FAILURE)
 	{
 		std::cout << __FUNCTION__ << " error : Initialize() == AM_FAILURE || LoadPersonalDataFile(""PersonalData.csv"") == AM_FAILURE" << std::endl;
 		exit(1);
